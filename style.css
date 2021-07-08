@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+body {
+    background-color: black;
+    color:white;
+    font-family: Open Sans;
+    font-weight:300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+}
+
+h1 {
+    font-size: 4em;
+    letter-spacing: 3px;
+}
+
+.blue {
+    color:#75b3ff;
+}
