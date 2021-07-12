@@ -31,7 +31,10 @@ h1 {
     margin-right: auto;
 }
 
+#logo g {
+    fill: #1b94ff;
+}
+
 #center {
     text-align: center;
-    /* width: 500px; */
 }
