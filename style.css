@@ -19,5 +19,19 @@ h1 {
 }
 
 .blue {
-    color:#75b3ff;
+    color:#1b94ff;
+}
+
+#logo {
+    width: 500px;
+    margin:0;
+    height: 500px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#center {
+    text-align: center;
+    /* width: 500px; */
 }
