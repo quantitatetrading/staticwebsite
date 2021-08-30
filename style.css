@@ -497,19 +497,19 @@ input[type=submit] {
 }
 
 .pfp-content {
-    background-color: rgba(0,0,0,0);
     height: 100%;
     width:100%;
-    color:rgba(0,0,0,0);
     text-align:center;
     padding: 20px;
+    opacity: 0.80;
+    background-color:#FF8D29;
+    color:white;
 }
 
 .pfp-content:hover {
     transition: 0.1s ease-in-out;
-    background-color:#FF8D29;
-    opacity: 0.85;
-    color:white;
+    color:rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0);
     
 }
 
