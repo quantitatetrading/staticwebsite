@@ -20,7 +20,7 @@
             <table>
                 <tr>
                     <td>
-                        <div class = 'sticky' style='min-width: 800px; width:50%; display: block;'> 
+                        <div class = 'sticky' style='min-width: 700px; width:50%; display: block;'> 
                             <h2 style='width:500px;'>Fast <span class='orange'>&</span><br> Efficient</h2>
                             <div class = 'seperator orange'></div>
                             <h3 style='width:500px;'>Rapidly Deploy Solutions to Optimize Your Data Workflows</h3>
@@ -35,7 +35,7 @@
                         </div>
                     </td>
                     <td>
-                        <div style="display:flex; justify-content: center; flex-direction: column;">
+                        <div id = "cards">
                             <div class = 'card'>
                                 <header>Rapid Prototyping</header>
                                 <div class='card-content'>
@@ -81,7 +81,7 @@
         </div>
         <div class = "triangle top left white" ></div>
         <div class = 'content white' style='padding-bottom: 50px; padding-right:0;'>
-            <div class = 'flex' style = 'padding-bottom: 0px'>
+            <div class = 'flex' style = 'padding-bottom: 0px; overflow-x:hidden;'>
             <div>
                 <h2>About Quantitate</h2>
                 <div class = 'seperator orange'></div>
@@ -94,7 +94,7 @@
                 </p>
             </div>  
             <div class = 'vertical-align'>
-                <img src = 'resources/stockShit.jpg'>
+                <img id = 'cityImage' src = 'resources/stockShit.jpg'>
             </div>
         </div>
         
@@ -105,40 +105,41 @@
         <table id = 'pfps'>
             <tr>
                 <td>
-                    <div class = 'pfp'>
+                    <div class = 'pfp' style="background-image: url('resources/pfps/cigar.jpg');">
                         <div class = 'pfp-content'>
                             <h4>Brandt Winkler Prins</h5>
                             <h4>CEO</h5>
                             <p>Donec eu bibendum orci. Pellentesque tincidunt tempus elementum.
                                 Donec eu bibendum orci. Pellentesque tincidunt tempus elementum.
                             </p>
+                            <a href = 'mailto:brandt@quantitate.trade'><img class = 'email' src = 'resources/email.svg'></a>
                         </div>
                     </div>
                 </td>
                 <td>
-                    <div class = 'pfp'>
+                    <div class = 'pfp' style="background-image: linear-gradient(black, black), url('resources/pfps/ivan.jpg');">
                         <div class = 'pfp-content'>
                             <h4>Ivan Lam</h5>
                             <h4>CFO</h5>
                             <p>Donec eu bibendum orci. Pellentesque tincidunt tempus elementum.
                                 Donec eu bibendum orci. Pellentesque tincidunt tempus elementum.
                             </p>
+                            <a href = 'mailto:ivan@quantitate.trade'><img class = 'email' src = 'resources/email.svg'></a>
                         </div>
                     </div>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <div class = 'pfp'>
-                        <div class = 'pfp'>
+                        <div class = 'pfp' style="background-image: linear-gradient(black, black), url('resources/pfps/daniel.jpg');">
                             <div class = 'pfp-content'>
                                 <h4>Daniel Dorey-Rodriguez</h5>
-                                <h4>Chief Scientist</h5>
+                                <h4>CIO</h5>
                                 <p>Donec eu bibendum orci. Pellentesque tincidunt tempus elementum.
                                     Donec eu bibendum orci. Pellentesque tincidunt tempus elementum.
                                 </p>
+                                <a href = 'mailto:daniel@quantitate.trade'><img class = 'email' src = 'resources/email.svg'></a>
                             </div>
-                        </div>
 
                     </div>
                 </td>
@@ -150,6 +151,7 @@
                             <p>Donec eu bibendum orci. Pellentesque tincidunt tempus elementum.
                                 Donec eu bibendum orci. Pellentesque tincidunt tempus elementum.
                             </p>
+                            <a href = 'mailto:leon@quantitate.trade'><img class = 'email' src = 'resources/email.svg'></a>
                         </div>
                     </div>
                 </td>
@@ -162,7 +164,7 @@
             <img class = "university" src = 'resources/berkeley.png'>
         </div>
         <div class='content'>
-            <h3 class="form-subheadline-2">Request a Demo</h1>
+            <h3>Request a Demo</h1>
             <form class="contact-form" method="post" action="https://go.pardot.com/l/824883/2020-11-10/246tg" >
                 <div>
                     <label for="firstName" class="form-label-2 dark">First Name *</label><input type="text" class="form-field-2 dark w-input" maxlength="256" name="firstName" data-name="First Name" placeholder="First Name" id="firstName" required="">
