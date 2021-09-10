@@ -13,17 +13,13 @@
     src: url("resources/Gotham-Font/Gotham-Bold.otf") format("opentype");
 }
 
-@font-face {
-    font-family: icons;
-    src: url("/home/bwp/quantitate/website/resources/Icon-font-7-stroke-PIXEDEN-v-1.2.0/pe-icon-7-stroke/fonts/icons.woff") format("woff");
-}
-
 :root {
     --orange: #FF8D29;
     --light-orange: rgba(255,187,127,1);
     --dark-blue: #041A2E;
     --blue: #0e4a80;
-    --light-blue: #1b94ff;
+    /* --light-blue: #1b94ff; */
+    --light-blue: #176bb7;
     --white: #F1F5F9;
     --dark-gray: #1e2124;
     --light-gray: #b1b1b1
@@ -43,26 +39,42 @@ body {
 }   
 
 #splashscreen {
-    padding: 0 !important;
+    /* padding: 0 !important; */
     margin: 0;
     top: 0;
     width: 100%;
     height: 108vh;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     
 }
 
+#splashscreen p {
+    padding: 20px;
+    font-family: Gotham Thin;
+    font-weight: Bold;
+    padding-bottom: 0;
+    font-size: 1rem;
+    letter-spacing: 0.08em;
+}
+
+#splashscreen i {
+    font-size: 4rem;
+}
+
+/* #splashscreen .card, #splashscreen h4 {
+    text-align: center !important;
+} */
 
 h1 {
     font-size: 4em;
-    letter-spacing: 0.15em;
-    font-family: Gotham Thin, sans-serif;
+    letter-spacing: 0.08em;
+    font-family: Gotham, sans-serif;
     margin:0;
     padding:0;
-    position: absolute;
-    width:100%;
-    height:100vh;
-    line-height: 100vh;
     vertical-align: center;
 }
 
@@ -78,9 +90,10 @@ h3 {
     font-size: 2em;
     line-height: 1.5em;
     margin:0;
-    text-justify: inter-word;
     width: 100%;
     font-weight: Bold;
+    text-decoration-thickness: 0.1em;
+    /* text-align: start; */
     /* margin-left: 25px; */
 }
 
@@ -90,6 +103,7 @@ p {
 
 .blue {
     color:var(--light-blue);
+    border-color: var(--light-blue);
 }
 
 #logo {
@@ -109,7 +123,7 @@ p {
     width:0;
     border-left: 1vw solid transparent;
     border-right: 1vw solid transparent;
-    border-top: 1.73vw solid var(--orange);
+    border-top: 1.73vw solid;
     top:90vh;
     left: calc(50% - 1.73vw);
     position:absolute;
@@ -158,7 +172,7 @@ ul li {
     color: white;
 }
 
-.white {
+.bg-white {
     border-color: var(--white) !important;
     background-color: var(--white);
     color: var(--dark-gray) !important;
@@ -167,6 +181,7 @@ ul li {
 .gray {
     background-color: #f0f1f3;
     color:var(--dark-gray) !important;
+    border-color: #f0f1f3 !important;
 }
 
 .dark-gray {
@@ -215,9 +230,8 @@ ul li {
 }
 
 a {
-    color: var(--orange);
-    font-weight: 900;
-    text-decoration: underline;
+    text-decoration: underline !important;
+    color:white;
 }
 
 #footer table {
@@ -225,6 +239,7 @@ a {
 }
 #footer p {
     margin: 10px !important;
+    
 }
 
 h5 {
@@ -245,7 +260,7 @@ h5 {
 }
 
 .text-custom {
-    color: var(--orange) !important;
+    color: var(--light-blue) !important;
 }
 
 .contact_info_main {
@@ -286,10 +301,11 @@ span.orange {
     top: 0;
     min-width: 700px; 
     width:50%; 
+    position:sticky; 
 }
 
 
-@media only screen and (min-width: 1500px) {
+/* @media only screen and (min-width: 1500px) {
     #cards {
         display: block;
     }
@@ -309,17 +325,26 @@ span.orange {
 
         position:static;
     }
+} */
+
+.bg-blue {
+    background-color: var(--light-blue)
 }
 
-.card {
+/* .card {
     width: 100%;
     min-height: 30vh;
     line-height: 30px;
-    /* border-radius: 10px; */
+     border-radius: 10px; 
     color:var(--dark-gray);
     background-color: white;
     box-shadow: 5px;
     margin: 100px 20px 100px 20px;
+} */
+
+.card {
+    margin: 30px;
+    /* margin: 100px 20px 100px 20px; */
 }
 
 .card-content {
@@ -337,8 +362,7 @@ header {
     -moz-box-sizing: border-box; 
     -webkit-box-sizing: border-box; 
      box-sizing: border-box; 
-    background-color: var(--orange);
-    opacity: 0.7;
+    /* opacity: 0.7; */
     /* border-radius: 10px 10px 0px 0px; */
     padding: 20px 40px 20px 40px;
     width:100%;
@@ -365,11 +389,12 @@ header {
 
 .indent {
     margin-left: 50px;
-    border-left: 1px solid var(--orange);
+    border-left: 1px solid var(--light-blue);
     padding-left:50px;
 }
 
 .seperator {
+    display:block;
     height:0;
     width: 200px;
     border: 20px solid;
@@ -386,20 +411,30 @@ button {
     align-items: center !important;
     font-size: 30px;
     font-family: Gotham Bold;
-    border-radius: 10px;
     height: 75px;
     padding: 30px;
     font-weight: bold;
-    color: white;
-    border: 5px solid var(--orange);
-    color: var(--orange);
-    background-color: white;
     text-decoration: none !important;
+    border: none;
 }
 
-button:hover{
+button.empty {
+    background-color: rgba(0,0,0,0);
+    border: 5px solid;
+}
+
+button.filled {
+    
+}
+
+button.filled:hover {
+    opacity: 0.5
+}
+
+button.empty:hover{
     transition: 0.3s;
-    background-color:var(--orange); color:white;
+    background-color:var(--light-blue); 
+    color:white;
     cursor:pointer;
 }
 
@@ -510,10 +545,15 @@ input[type=submit] {
      box-sizing: border-box; 
 }
 
+.about-wide {
+    overflow-x: 0;
+    padding: 0;
+    display: flex;
+}
+
 .wide {
     width: 100%;
     display: block;
-    flex-basis: 100%;
 
 }
 
@@ -533,6 +573,7 @@ input[type=submit] {
 .universities h3 {
     margin-bottom: 50px;
     font-family: Gotham Bold;
+    font-weight: Bold;
 }
 
 #cityImage {
@@ -563,7 +604,6 @@ input[type=submit] {
     display: block;
     color:white;
     overflow-y: hidden;
-    border-radius: 10px;
     background-size: cover;
     background-blend-mode: saturation;
 
@@ -575,7 +615,6 @@ input[type=submit] {
     text-align:center;
     padding: 20px;
     opacity: 0.80;
-    background-color:var(--orange);
     color:white;
 }
 
@@ -599,12 +638,16 @@ input[type=submit] {
     display: block;
 }
 
+.pfp h4 {
+    text-align: left;
+}
+
 h4 {
     width: 100%;
     margin:0;
     font-size: 20px;
     font-family: Gotham Bold;
-    text-align: left;
+    /* text-align: left; */
 }
 
 .email {
@@ -616,7 +659,7 @@ h4 {
     /* bottom: 0px; */
 }
 
-.gradient {
+.blue-gradient {
     background: rgb(4,26,46);
     background: linear-gradient(135deg, rgba(4,26,46,1) 0%, rgba(14,74,128,1) 100%);
     color: white !important;
@@ -644,7 +687,6 @@ h4 {
 }
 
 .box.left {
-    margin-left: -10vw;
     border-radius: 0 20px 20px 0;
 }
 
@@ -662,9 +704,10 @@ h4 {
 }
 
 .side-text {
-    padding-right: 0;
+    padding: 100px;
     display: inline-block;
-    width: 50vw;
+    width: 65rem;
+    /* width: 50vw; */
 
 }
 
@@ -680,7 +723,7 @@ h4 {
 }
 
 .marquee-content {
-    height: 150px;
+    height: 100px;
     display: flex;
     list-style: none;
     justify-content: flex-start;
@@ -692,7 +735,7 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150px;
+    height: 100px;
     width: calc(100vw / 6);
     flex-shrink: 0;
 }
