@@ -6,12 +6,21 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
         <link rel="icon" type="image/png" href="resources/favicon.ico">
         <title>QTT</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
         <link rel="stylesheet" type="text/css" href="style.css">    
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
         <script src = 'script.js'></script>
+        <!-- CSS only -->
     </head>
     <body>
+        <script>
+            AOS.init();
+          </script>
         <div id = 'splashscreen'>
             <div>
             <div class = 'container'>
@@ -24,7 +33,7 @@
             </div>
             <div class = 'row' style='width: 100%; margin:0;'>
                 <div class = 'col-lg'>
-                    <div class = 'card text-center bg-blue'>
+                    <div class = 'card text-center fade-in-section bg-blue'>
                         <div class = 'card-body'>
                         <i class = 'bi-display' ></i>
                         <h4><b>Format?</b></h4>
@@ -33,7 +42,7 @@
                     </div>
                 </div>
                 <div class = 'col-lg'>
-                    <div class = 'card text-center bg-blue'>
+                    <div class = 'card fade-in-section text-center bg-blue'>
                         <div class = 'card-body'>
                         <i class = 'bi-calendar-event' ></i>
                         <h4><b>When?</b></h4>
@@ -42,7 +51,7 @@
                     </div>
                 </div>
                 <div class = 'col-lg'>
-                    <div class = 'card text-center bg-blue'>
+                    <div class = 'card fade-in-section text-center bg-blue'>
                         <div class = 'card-body'>
                         <i class = 'bi-cash'></i>
                         <h4><b>Price?</b></h4>
@@ -52,77 +61,56 @@
                 </div>
         </div>  
         <div class = 'container' style='margin-bottom: 10vh'>
-            <a href='#webinar'><h3 style='font-weight:100; color:white'>Learn More</h3></a>
+            <a href='#webinar' style='text-decoration: none;'><h3 style='font-weight:100; color:white; text-decoration:underline;'>Learn More</h3></a>
         </div>
         </div>
         </div>
             <div class = 'down-triangle floating blue'></div>
         </div>
-        <div class = "triangle top left gray" ></div>
-<!--             
-        <div class = 'content bg-white'>
-            <div class = 'row'>
-                <h3>How QTT Let's you</h3>
-                <h2>Aggregate <span class='blue'>&</span><br>Analyze  </h2>
-            </div>
-            <div class = 'row'>
-            <div class = 'seperator blue'></div>
+        <nav id="navbar-example2" class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
+            <div class = 'container-fluid p-0'>
+            <a class="navbar-brand" href="#">
+                <img src="resources/logo2.svg" alt="" width="40">
+                <h6><span class='blue'>Q</span>UAN<span class='blue'>T</span>I<span class='blue'>T</span>A<span class='blue'>T</span>E <span class='blue'>T</span>RADING</h6>
+              </a>
+            <ul class="nav nav-pills">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      QTT Platform
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Overview</a></li>
+                      <li><a class="dropdown-item" href="#">Integrations</a></li>
+                      <li><a class="dropdown-item" href="#">ESG Functionality</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      About
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Overview</a></li>
+                      <li><a class="dropdown-item" href="https://angel.co/company/quantitate-trading/jobs">Careers</a></li>
+                      <li><a class="dropdown-item" href="#">Contact</a></li>
+                    </ul>
+                  </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#fat">Webinar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#mdo">Request Demo</a>
+              </li>
+            </ul>
         </div>
-            <div class = 'row'>
-                <div class = 'col-lg-8'>
-                    <div class='row'>
-                        <div class = 'col-2'>
-                            <h2>
-                                01
-                            </h2>
-                        </div>
-                        <div class = 'col'>
-                            <p>Donec eu bibendum orci. Pellentesque tincidunt tempus elementum.</p>
-                        </div>
-                    </div>
-                    <div class='row'>
-                        <div class = 'col-2'>
-                            <h2>
-                                02
-                            </h2>
-                        </div>
-                        <div class = 'col'>
-                            <p>Donec eu bibendum orci. Pellentesque tincidunt tempus elementum.</p>
-                        </div>
-                    </div>
-                    <div class='row'>
-                        <div class = 'col-2'>
-                            <h2>
-                                03
-                            </h2>
-                        </div>
-                        <div class = 'col'>
-                            <p>Donec eu bibendum orci. Pellentesque tincidunt tempus elementum.</p>
-                        </div>
-                    </div>
-                    <div class='row'>
-                        <div class = 'col-2'>
-                            <h2>
-                                04
-                            </h2>
-                        </div>
-                        <div class = 'col'>
-                            <p>Donec eu bibendum orci. Pellentesque tincidunt tempus elementum.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class = 'col-lg'>
-                    
-                </div>
-            </div>
+          </nav>
+          <div class = 'content bg-white'>
+              <h3>Our Flagship Data Product</h3>
+              <h2>The QTT Platform</h2>
+          </div>
 
-        </div>
-        <div class = 'content'>
-            
-        </div> -->
         <div class='content gray'>
             <div class = 'row'>
-                <div class = 'col-lg'>
+                <div class = 'col'>
                         <div id = 'sticky'> 
                             <h2 style='width:500px;'>Fast <span class='blue'>&</span><br> Efficient</h2>
                             <div class = 'seperator blue'></div>
@@ -137,9 +125,9 @@
                             <a style='text-decoration:none;'href='#demo'><button class='blue'>BOOK A DEMO</button></a>
                         </div>
                 </div>
-                <div class = 'col-lg'>
+                <div class = 'col'>
                         <div id = "cards">
-                            <div class = 'card'>
+                            <div class = 'card shadow'>
                                 <header class = 'bg-blue'>Rapid Prototyping</header>
                                 <div class='card-content'>
                                     <p>
@@ -150,7 +138,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class = 'card'>
+                            <div class = 'card shadow'>
                                 <header class = 'bg-blue'>Improved Operational Efficiency</header>
                                 <div class='card-content'>
                                     <p>
@@ -161,7 +149,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class = 'card'>
+                            <div class = 'card shadow'>
                                 <header class = 'bg-blue'>Low Implementation Cost</header>
                                 <div class='card-content'>
                                     <p>
@@ -172,7 +160,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class = 'card'>
+                            <div class = 'card shadow'>
                                 <header class = 'bg-blue'>Low Implementation Cost</header>
                                 <div class='card-content'>
                                     <p>
@@ -226,7 +214,193 @@
                 </li>
             </ul>
         </div>
-        <div id = 'demo' class='content gradient'>
+        <div class="content gray " style='padding-bottom: 0px'> 
+            <div class="container" >
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8 text-center">
+      
+                  <!-- Heading -->
+                  <h1>
+                    Fair, simple pricing for all.
+                  </h1>
+      
+                  <!-- Text -->
+                  <p class="lead text-gray-700">
+                    All types of businesses need access to development resources, so we give you the option to decide how much you need to use.
+                  </p>
+      
+                  <!-- Form -->
+                  <form class="d-flex align-items-center justify-content-center mb-7 mb-md-9">
+      
+                    <!-- Label -->
+                    <span class="text-muted">
+                      Annual
+                    </span>
+      
+                    <!-- Switch -->
+                    <div class="form-check form-switch mx-3">
+                      <input class="form-check-input" type="checkbox" id="billingSwitch" data-toggle="price" data-target=".price">
+                    </div>
+      
+                    <!-- Label -->
+                    <span class="text-muted">
+                      Monthly
+                    </span>
+      
+                  </form>
+      
+                </div>
+              </div> <!-- / .row -->
+              <div id ='price-cards' class="mt-5 row align-items-center justify-content-center gx-0">
+                <div class="col-lg-5">
+      
+                  <!-- Card -->
+                  <div class="card m-lg-0 m-3 rounded-lg shadow-lg mb-6 mb-md-0 aos-init aos-animate" style="z-index: 1;" data-aos="fade-up">
+      
+                    <!-- Body -->
+                    <div class="card-body py-6 py-md-8">
+                      <div class="row justify-content-center">
+                        <div class="col-12 col-xl-9">
+      
+                          <!-- Badge -->
+                          <div class="text-center mb-5">
+                            <span class="badge rounded-pill bg-primary-soft">
+                              <span class="h6  text-uppercase">Standard</span>
+                            </span>
+                          </div>
+      
+                          <!-- Price -->
+                          <div class="d-flex justify-content-center">
+                            <span class="h2 mb-0 mt-2">$</span>
+                            <span class="price display-2 mb-0" data-annual="29" data-monthly="49">29</span>
+                            <span class="h2 align-self-end mb-1">/mo</span>
+                          </div>
+      
+                          <!-- Text -->
+                          <p class="text-center text-muted mb-6 mb-md-8">
+                            per seat
+                          </p>
+      
+                          <!-- Features -->
+                          <div style='margin: 3em 0 3em 0'>
+                          <div class="d-flex">
+
+                            <!-- Check -->
+                            <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                              <i class="fe bi-check-circle-fill"></i>
+                            </div>
+      
+                            <!-- Text -->
+                            <p>
+                              Rich, responsive landing pages
+                            </p>
+      
+                          </div>
+                          <div class="d-flex">
+      
+                            <!-- Check -->
+                            <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                              <i class="fe bi-check-circle-fill"></i>
+                            </div>
+      
+                            <!-- Text -->
+                            <p>
+                              100+ styled components
+                            </p>
+      
+                          </div>
+                          <div class="d-flex">
+      
+                            <!-- Check -->
+                            <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                              <i class="fe bi-check-circle-fill"></i>
+                            </div>
+      
+                            <!-- Text -->
+                            <p>
+                              Flexible, simple license
+                            </p>
+      
+                          </div>
+                          <div class="d-flex">
+      
+                            <!-- Check -->
+                            <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                              <i class="fe bi-check-circle-fill"></i>
+                            </div>
+      
+                            <!-- Text -->
+                            <p>
+                              Speedy build tooling
+                            </p>
+      
+                          </div>
+                          <div class="d-flex">
+      
+                            <!-- Check -->
+                            <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                              <i class="fe bi-check-circle-fill"></i>
+                            </div>
+      
+                            <!-- Text -->
+                            <p class="mb-0">
+                              6 months free support included
+                            </p>
+      
+                          </div>
+                          </div>
+      
+                        </div>
+                      </div> <!-- / .row -->
+                    </div>
+      
+                    <!-- Button -->
+                    <a href="#!" class="card-btn btn w-100 btn-lg btn-primary bg-blue p-4">
+                      Get it now
+                    </a>
+      
+                  </div>
+      
+                </div>
+                <div class="col-lg-5">
+      
+                  <!-- Card -->
+                  <div class="card m-lg-0 m-3 rounded-lg shadow-lg aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+      
+                    <!-- Body -->
+                    <div class="card-body py-6 py-md-8">
+                      <div class="row justify-content-center">
+                        <div class="col-12 col-xl-10">
+      
+                          <!-- Badge -->
+                          <p class="text-center mb-8 mb-md-11">
+                            <span class="badge rounded-pill bg-primary-soft mb-5">
+                              <span class="h6 text-uppercase">Enterprise</span>
+                            </span>
+                          </p>
+      
+                          <!-- Text -->
+                          <p class="lead text-center text-muted mb-5 mt-5">
+                            We offer variable pricing with discounts for larger organizations. Get in touch with us and we’ll figure out something that works for everyone.
+                          </p>
+      
+                        </div>
+                      </div> <!-- / .row -->
+                    </div>
+      
+                    <!-- Button -->
+                    <a href="#!" class="mb-0 mt-5 card-btn btn w-100 btn-lg btn-light bg-gray-300 text-gray-700 p-4">
+                      Contact us
+                    </a>
+      
+                  </div>
+      
+                </div>
+              </div> <!-- / .row -->
+            </div> <!-- / .container -->
+        </div>
+        <div class='gray triangle bottom right'></div>
+        <div id = 'demo' class='content gradient fade show'>
             <h3>Request a Demo</h1>
             <form class="contact-form" method="post" action="https://go.pardot.com/l/824883/2020-11-10/246tg" >
                 <div>
@@ -242,6 +416,7 @@
             </form>
             <input type="submit" value="Submit" data-wait="Please wait..." class="primary-button-2 footer-form w-button">
         </div>
+        <div class = 'white triangle top left'></div>
         <div id = 'about' class = 'content bg-white' style=' padding:100px 0 50px 0;'>
             <!-- <div class = 'flex' style = 'padding-bottom: 0px; overflow-x:hidden;'> -->
             <div id>
@@ -286,7 +461,7 @@
                             <p>Donec eu bibendum orci. Pellentesque tincidunt tempus elementum.
                                 Donec eu bibendum orci. Pellentesque tincidunt tempus elementum.
                             </p>
-                            <a href = 'mailto:brandt@quantitate.trade'><img class = 'email' src = 'resources/email.svg'></a>
+                            <a href = 'mailto:brandt@quantitate.trade'><i class = 'bi-envelope email'></i></a>
                         </div>
                     </div>
                 </td>
@@ -298,7 +473,7 @@
                             <p>Donec eu bibendum orci. Pellentesque tincidunt tempus elementum.
                                 Donec eu bibendum orci. Pellentesque tincidunt tempus elementum.
                             </p>
-                            <a href = 'mailto:ivan@quantitate.trade'><img class = 'email' src = 'resources/email.svg'></a>
+                            <a href = 'mailto:ivan@quantitate.trade'><i class = 'bi-envelope email'></i></a>
                         </div>
                     </div>
                 </td>
@@ -312,7 +487,7 @@
                                 <p>Donec eu bibendum orci. Pellentesque tincidunt tempus elementum.
                                     Donec eu bibendum orci. Pellentesque tincidunt tempus elementum.
                                 </p>
-                                <a href = 'mailto:daniel@quantitate.trade'><img class = 'email' src = 'resources/email.svg'></a>
+                                <a href = 'mailto:daniel@quantitate.trade'><i class = 'bi-envelope email'></i></a>
                             </div>
 
                     </div>
@@ -325,7 +500,7 @@
                             <p>Donec eu bibendum orci. Pellentesque tincidunt tempus elementum.
                                 Donec eu bibendum orci. Pellentesque tincidunt tempus elementum.
                             </p>
-                            <a href = 'mailto:leon@quantitate.trade'><img class = 'email' src = 'resources/email.svg'></a>
+                            <a href = 'mailto:leon@quantitate.trade'><i class = 'bi-envelope email'></i></a>
                         </div>
                     </div>
                 </td>
@@ -335,8 +510,8 @@
 </div>
 <div class = 'flex universities bg-white'>
     <h2 class='subtle'>In Association With</h2>
-    <img class = "university" src = 'resources/UCL.png'>
-    <img class = "university" src = 'resources/berkeley.png'>
+    <img class = "university aos-init aos-animate" style="z-index: 1;" data-aos="fade-up" data-aos-delay="200" src = 'resources/UCL.png'>
+    <img class = "university aos-init aos-animate" style="z-index: 1;" data-aos="fade-up" data-aos-delay="200" src = 'resources/berkeley.png'>
 </div>
 
 <!-- <a><div class = 'alert'>We're Hiring!</div></a> -->

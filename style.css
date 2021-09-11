@@ -39,7 +39,7 @@ body {
 }   
 
 #splashscreen {
-    /* padding: 0 !important; */
+    padding: 0 !important;
     margin: 0;
     top: 0;
     width: 100%;
@@ -71,7 +71,7 @@ body {
 
 h1 {
     font-size: 4em;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.05em;
     font-family: Gotham, sans-serif;
     margin:0;
     padding:0;
@@ -83,6 +83,7 @@ h2 {
     font-size: 8em;
     line-height: 1em;
     margin: 0;
+    /* width: 65rem; */
 }
 
 h3 {
@@ -92,7 +93,6 @@ h3 {
     margin:0;
     width: 100%;
     font-weight: Bold;
-    text-decoration-thickness: 0.1em;
     /* text-align: start; */
     /* margin-left: 25px; */
 }
@@ -124,33 +124,9 @@ p {
     border-left: 1vw solid transparent;
     border-right: 1vw solid transparent;
     border-top: 1.73vw solid;
-    bottom:10vh;
+    bottom:15vh;
     left: calc(50% - 1.73vw);
     position:relative;
-}
-
-#navbar {
-    position: absolute;
-    height: 4vh;
-    width: 100%;
-    top: 100vh;
-}
-
-ul {
-    margin:0;
-    padding:0;
-    height:100%;
-    width: 50%;
-    padding: 0% 25% 0 25%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-}
-
-ul li {
-    display: inline;
-    height: 100%;
-    vertical-align: center;
 }
 
 .floating { 
@@ -194,7 +170,7 @@ ul li {
     padding: 100px 10% 100px 10%;
     color:white;
     width: 100%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .content p {
@@ -231,9 +207,29 @@ ul li {
 }
 
 a {
-    text-decoration: underline !important;
+    /* text-decoration: underline !important; */
     color:white;
+    text-decoration: underline;
 }
+
+a.nav-link {
+    text-decoration: none;
+    color: var(--dark-gray);
+}
+
+nav .container-fluid{
+    padding-left: 10vw !important;
+    padding-right: 10vw !important;
+}
+
+nav .nav-pills {
+    padding: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    /* margin-top: 0; // remove the gap so it doesn't close */
+ }
 
 #footer table {
     display: inline;
@@ -299,7 +295,7 @@ span.orange {
 
 #sticky {
     display: block;
-    top: 0;
+    top: 100px;
     min-width: 700px; 
     width:50%; 
     position:sticky; 
@@ -345,6 +341,7 @@ span.orange {
 
 .card {
     margin: 30px;
+    margin-right:0px;
     /* margin: 100px 20px 100px 20px; */
 }
 
@@ -356,7 +353,6 @@ span.orange {
 }
 
 .card p {
-    font-size: 20px;
     margin:0;
 }
 header {
@@ -380,7 +376,7 @@ header {
 }
 
 .fade-in-section {
-    animation: fadeIn 2s
+    animation: fadeIn 1.5s
 }
 
 @keyframes fadeIn {
@@ -575,6 +571,7 @@ input[type=submit] {
     margin-bottom: 50px;
     font-family: Gotham Bold;
     font-weight: Bold;
+    text-decoration: underline;
 }
 
 #cityImage {
@@ -654,7 +651,7 @@ h4 {
 .email {
     margin-top: 10px;
     float: left;
-    height: 40px;
+    font-size: 2em;
     position: relative;
     top: 20px;
     /* bottom: 0px; */
@@ -761,4 +758,58 @@ h4 {
     width: 100%!important;
     text-align: center !important;
     color: var(--light-gray) !important;
+}
+
+h6 {
+    font-family: Gotham Thin;
+    font-size: 15px;
+    letter-spacing: 0.08em;
+    font-weight: bold;
+    display: inline;
+    vertical-align: center;
+    margin-left: 10px;
+
+}
+
+.badge.bg-primary-soft {
+    background-color: rgba(51,94,234,.1);
+    color: #335eea;
+    padding: 0.5em 1em 0.5em 1em;
+    font-size: 8px Imp !important;
+}
+
+.badge.bg-success-soft {
+    /* background-color: rgba(66,186,150,.1); */
+    font-size: 1.15rem;
+    color: #42ba96;
+}
+
+a.btn {
+    font-size: 1em;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.card, .card * {
+    border:0;
+}
+
+.h6 {
+    font-size: 12px;
+}
+
+#price-cards {
+    height: 20em;
+}
+
+@media (min-width: 992px) { 
+    #demo {
+        padding-top: 400px;
+    }
+}
+
+@media (max-width: 992px) { 
+    #demo {
+        padding-top: 800px;
+    }
 }
