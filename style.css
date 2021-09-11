@@ -80,10 +80,10 @@ h1 {
 
 h2 {
     font-family: Gotham Bold, sans-serif;
-    font-size: 8em;
+    font-size: 5em;
     line-height: 1em;
     margin: 0;
-    /* width: 65rem; */
+    width: 65rem;
 }
 
 h3 {
@@ -98,7 +98,9 @@ h3 {
 }
 
 p {
-    margin: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 65rem;
 }
 
 .blue {
@@ -225,11 +227,6 @@ nav .container-fluid{
 nav .nav-pills {
     padding: 0;
 }
-
-.dropdown:hover .dropdown-menu {
-    display: block;
-    /* margin-top: 0; // remove the gap so it doesn't close */
- }
 
 #footer table {
     display: inline;
@@ -597,8 +594,8 @@ input[type=submit] {
 }
 
 .pfp {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     display: block;
     color:white;
     overflow-y: hidden;
@@ -611,7 +608,7 @@ input[type=submit] {
     height: 100%;
     width:100%;
     text-align:center;
-    padding: 20px;
+    padding: 30px;
     opacity: 0.80;
     color:white;
 }
@@ -649,7 +646,7 @@ h4 {
 }
 
 .email {
-    margin-top: 10px;
+    margin-top: 40px;
     float: left;
     font-size: 2em;
     position: relative;
@@ -812,4 +809,66 @@ a.btn {
     #demo {
         padding-top: 800px;
     }
+}
+
+#demo {
+    margin-bottom: 200px
+}
+.card {
+    border-radius: .3em
+}
+
+.image-stack::after {
+    content: ' ';
+    display: table;
+    clear: both;
+}
+  
+.image-stack__item--top {
+    float: left;
+    width: 66%;
+    margin-right: -50%;
+    padding-top: 30%;
+    z-index: 1;
+    position: relative;
+}
+
+.image-stack__item--bottom {
+    float: right;
+    width: 75%;
+}
+
+.image-stack img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border: 1em solid var(--white);
+}
+
+.terminal {
+    display:block;
+    font-family: monospace;
+    background-color: var(--dark-gray);
+    color: var(--white);
+    height: 600px;
+    /* width: 600px; */
+}
+
+.terminal p {
+    margin: 20px;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.green {
+    color: #42ba96
+}
+
+.col-lg-6 img {
+    height:600px;
+    object-fit: cover;
+}
+
+#overview .row:not(:first-child)  {
+    margin: 200px 0 200px 0
 }

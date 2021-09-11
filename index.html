@@ -64,10 +64,10 @@
             <a href='#webinar' style='text-decoration: none;'><h3 style='font-weight:100; color:white; text-decoration:underline;'>Learn More</h3></a>
         </div>
         </div>
+    </div>
+    <div class = 'down-triangle floating blue'></div>
         </div>
-            <div class = 'down-triangle floating blue'></div>
-        </div>
-        <nav id="navbar-example2" class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
+        <nav id="navbar-example2" class="shadow-sm navbar sticky-top navbar-expand-lg navbar-light bg-white">
             <div class = 'container-fluid p-0'>
             <a class="navbar-brand" href="#">
                 <img src="resources/logo2.svg" alt="" width="40">
@@ -79,8 +79,8 @@
                       QTT Platform
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Overview</a></li>
-                      <li><a class="dropdown-item" href="#">Integrations</a></li>
+                      <li><a class="dropdown-item" href="#overview">Overview</a></li>
+                      <li><a class="dropdown-item" href="#features">Features</a></li>
                       <li><a class="dropdown-item" href="#">ESG Functionality</a></li>
                     </ul>
                   </li>
@@ -89,26 +89,89 @@
                       About
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Overview</a></li>
+                      <li><a class="dropdown-item" href="#about">Overview</a></li>
                       <li><a class="dropdown-item" href="https://angel.co/company/quantitate-trading/jobs">Careers</a></li>
-                      <li><a class="dropdown-item" href="#">Contact</a></li>
+                      <li><a class="dropdown-item" href="#footer">Contact</a></li>
                     </ul>
                   </li>
               <li class="nav-item">
                 <a class="nav-link" href="#fat">Webinar</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#mdo">Request Demo</a>
+                <a class="nav-link" href="#demo">Request Demo</a>
               </li>
             </ul>
         </div>
           </nav>
-          <div class = 'content bg-white'>
-              <h3>Our Flagship Data Product</h3>
-              <h2>The QTT Platform</h2>
+          <div id='overview' class = 'content bg-white'>
+              <div class = 'row'>
+              <h3 class='text-center'>Our Flagship Data Product</h3>
+              <h1 class='text-center'>The <span class='blue'>QTT</span> Platform</h1>
+              <p class='text-center wide'>Revoltionize your revolutionary revolution with innovation</p>
+            </div>
+              <div class = 'row mt-5 md-5'>
+                  <div class = 'col-lg-6 d-flex align-items-center flex-wrap p-5'>
+                    <div>
+                    <h3 style='font-size: 40px'>A Lightning Fast ETL Pipeline</h3>
+                    <p>
+                        Donec eu bibendum orci. Pellentesque tincidunt tempus elementum. Donec finibus, augue a tristique hendrerit, dui massa pulvinar est, id volutpat elit diam vel augue. In a lobortis quam. Morbi varius augue mauris, nec sagittis lorem lacinia eu. Aliquam erat volutpat. Nullam feugiat odio at sollicitudin consectetur.
+                    </p>
+                    </div>  
+                  </div>
+                  <div class = 'col-lg-6'>
+                    <div class = 'shadow terminal blue-gradient rounded p-5 aos-init aos-animate' data-aos="fade-up" data-aos-delay="200">
+                        <p>
+                        > (base) <span class = 'green'>bwp@pop-os</span>:<span class='blue'>~/quantitate/</span>$ systemctl status quantitate-etl<br>
+                        > <span class = 'green'>●</span> quantitate-etl.service - deploy a fault-tolerant etl from a single command<br>
+                        > &nbsp;&nbsp;&nbsp;&nbsp; Loaded: loaded (/lib/quantitate/quantitate-etl.service; static)<br>
+                        > &nbsp;&nbsp;&nbsp;&nbsp; Active: <span class = 'green'>active (running)</span> since Mon 2021-05-10 15:32:14 CEST; 124 days ago<br>
+                        > TriggeredBy: <span class = 'green'>●</span> quantitate-etl-kernel.socket<br>
+                        > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class = 'green'>●</span> quantitate-etl-control.socket<br>
+                        > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Docs: man:quantitate-etl.service(8)<br>
+                        > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; man:quantitate-etl(7)<br>
+                        > &nbsp;&nbsp; Main PID: 436 (quantitate-etl)<br>
+                        > &nbsp;&nbsp;&nbsp;&nbsp; Status: "Processing with 32 children at max"<br>
+                        > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tasks: 1<br>
+                        > &nbsp;&nbsp;&nbsp;&nbsp; Memory: 77.4M<br>
+                        > &nbsp;&nbsp;&nbsp;&nbsp; CGroup: /lib/quantitate/quantitate-etl.service<br>
+                        > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; └─436 /lib/quantitate/quantitate-etl<br>
+                        > <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class = 'row mt-5 md-5'>
+                <div class = 'col-lg-6'>
+                    <img class = 'rounded aos-init aos-animate' data-aos="fade-up" data-aos-delay="200" style = "object-fit: contain; height:600px; width:100%;" src='https://res2.weblium.site/res/5c643256e692c00022c8168b/5d5140652ac37d00239fc111_optimized'>
+                    <!-- <div class='blue-gradient rounded' style="height:600px; width:100%; opacity:0.8;"> </div> -->
+                </div>
+                <div class = 'col-lg-6 d-flex align-items-center flex-wrap p-5'>
+                    <div>
+                        <h3 style='font-size: 40px'>Integrated with your Data Analysis Tools</h3>
+                        <p>
+                            Donec eu bibendum orci. Pellentesque tincidunt tempus elementum. Donec finibus, augue a tristique hendrerit, dui massa pulvinar est, id volutpat elit diam vel augue. In a lobortis quam. Morbi varius augue mauris, nec sagittis lorem lacinia eu. Aliquam erat volutpat. Nullam feugiat odio at sollicitudin consectetur.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class = 'row mt-5 md-5'>
+                <div class = 'col-lg-6 d-flex align-items-center flex-wrap p-5'>
+                    <div>
+                        <h3 style='font-size: 40px'>Empower Your Front, Middle, and Back Offices with Big Data</h3>
+                        <p>
+                            Donec eu bibendum orci. Pellentesque tincidunt tempus elementum. Donec finibus, augue a tristique hendrerit, dui massa pulvinar est, id volutpat elit diam vel augue. In a lobortis quam. Morbi varius augue mauris, nec sagittis lorem lacinia eu. Aliquam erat volutpat. Nullam feugiat odio at sollicitudin consectetur.
+                        </p>
+                    </div>
+                </div>
+                <div class = 'col-lg-6'>
+                    <div class = 'rounded aos-init aos-animate' data-aos="fade-up" data-aos-delay="200" style = "background: url('resources/skyscraper.jpg'); height:600px; width:100%;">
+                    <div class='blue-gradient rounded' style="height:600px; width:100%; opacity:0.8;"> </div>
+                    </div>
+                </div>
+            </div>
           </div>
 
-        <div class='content gray'>
+        <div class='content gray' id='features'>
             <div class = 'row'>
                 <div class = 'col'>
                         <div id = 'sticky'> 
@@ -214,6 +277,34 @@
                 </li>
             </ul>
         </div>
+        <!-- <div class = 'content'>
+            <div class="container" >
+                <div class="row justify-content-center">
+                  <div class="col-12 col-md-10 col-lg-8 text-center">
+        
+                    <h1>
+                        QTT's Out-of-the-box ESG Empowerment
+                    </h1>
+                    </div>
+                </div>
+                <div class='row mt-5'>
+                    <div class = 'col'>
+
+                    </div>
+                    <div class = 'col align-items-center'>
+                        <div class="image-stack">
+                            <div class="image-stack__item image-stack__item--top">
+                              <img class = 'shadow' src="resources/esg-2.jpg" alt="">
+                            </div>
+                            <div class="image-stack__item image-stack__item--bottom shadow">
+                              <img class = 'shadow' src="resources/esg-1.jpg" alt="">
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+
+        </div> -->
         <div class="content gray " style='padding-bottom: 0px'> 
             <div class="container" >
               <div class="row justify-content-center">
@@ -255,10 +346,10 @@
                 <div class="col-lg-5">
       
                   <!-- Card -->
-                  <div class="card m-lg-0 m-3 rounded-lg shadow-lg mb-6 mb-md-0 aos-init aos-animate" style="z-index: 1;" data-aos="fade-up">
+                  <div class="card m-lg-0 m-3 shadow-lg mb-6 mb-md-0 aos-init aos-animate" style="z-index: 1;" data-aos="fade-up">
       
                     <!-- Body -->
-                    <div class="card-body py-6 py-md-8">
+                    <div class="card-body py-6 py-md-8" style='background-color: rgba(0,0,0,0);'>
                       <div class="row justify-content-center">
                         <div class="col-12 col-xl-9">
       
@@ -356,7 +447,7 @@
       
                     <!-- Button -->
                     <a href="#!" class="card-btn btn w-100 btn-lg btn-primary bg-blue p-4">
-                      Get it now
+                      Pre-order now
                     </a>
       
                   </div>
@@ -365,7 +456,7 @@
                 <div class="col-lg-5">
       
                   <!-- Card -->
-                  <div class="card m-lg-0 m-3 rounded-lg shadow-lg aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                  <div class="card m-lg-0 m-3 rounded shadow-lg aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
       
                     <!-- Body -->
                     <div class="card-body py-6 py-md-8">
@@ -449,12 +540,12 @@
         
     </div>
     <div class = "content gray center">
-        <h2 style='font-size: 75px'>Who We Are</h2>
+        <h2 style='font-size: 75px; width:100%; text-align:center'>Who We Are</h2>
         <div class = 'wide center'>
         <table id = 'pfps'>
             <tr>
                 <td>
-                    <div class = 'pfp rounded' style="background-image: url('resources/pfps/cigar.jpg');">
+                    <div class = 'pfp rounded shadow aos-init aos-animate' data-aos="fade-up" data-aos-delay="200" style="background-image: url('resources/pfps/cigar.jpg');">
                         <div class = 'pfp-content bg-blue'>
                             <h4>Brandt Winkler Prins</h5>
                             <h4>CEO</h5>
@@ -466,7 +557,7 @@
                     </div>
                 </td>
                 <td>
-                    <div class = 'pfp rounded' style="background-image: linear-gradient(black, black), url('resources/pfps/ivan.jpg');">
+                    <div class = 'pfp rounded shadow aos-init aos-animate' data-aos="fade-up" data-aos-delay="200" style="background-image: linear-gradient(black, black), url('resources/pfps/ivan.jpg');">
                         <div class = 'pfp-content bg-blue'>
                             <h4>Ivan Lam</h5>
                             <h4>CFO</h5>
@@ -480,7 +571,7 @@
             </tr>
             <tr>
                 <td>
-                        <div class = 'pfp rounded' style="background-image: linear-gradient(black, black), url('resources/pfps/daniel.jpg');">
+                        <div class = 'pfp rounded shadow aos-init aos-animate' data-aos="fade-up" data-aos-delay="200" style="background-image: linear-gradient(black, black), url('resources/pfps/daniel.jpg');">
                             <div class = 'pfp-content bg-blue'>
                                 <h4>Daniel Dorey-Rodriguez</h5>
                                 <h4>CIO</h5>
@@ -493,7 +584,7 @@
                     </div>
                 </td>
                 <td>
-                    <div class = 'pfp rounded' style="background-image: linear-gradient(black, black), url('resources/pfps/leon.jpg');">
+                    <div class = 'pfp rounded shadow aos-init aos-animate' data-aos="fade-up" data-aos-delay="200" style="background-image: linear-gradient(black, black), url('resources/pfps/leon.jpg');">
                         <div class = 'pfp-content bg-blue'>
                             <h4>Leon Lakhani</h5>
                             <h4>COO</h5>
