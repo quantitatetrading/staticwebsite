@@ -81,9 +81,7 @@ h1 {
 h2 {
     font-family: Gotham Bold, sans-serif;
     font-size: 5em;
-    line-height: 1em;
     margin: 0;
-    width: 65rem;
 }
 
 h3 {
@@ -400,7 +398,7 @@ header {
     margin:0;
 }
 
-button {
+button.blue {
     display: inline-flex !important;
     align-items: center !important;
     font-size: 30px;
@@ -871,4 +869,8 @@ a.btn {
 
 #overview .row:not(:first-child)  {
     margin: 200px 0 200px 0
+}
+
+.accordion {
+    color: var(--dark-gray)
 }
