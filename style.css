@@ -345,22 +345,30 @@ span.orange {
     vertical-align: middle;
     height: 100%;
     padding: 40px;
+    text-align: left;
+}
+
+.card i {
+    font-size:2rem;
 }
 
 .card p {
     margin:0;
 }
 header {
+    padding: 40px;
+    padding-bottom: 0px;
     -moz-box-sizing: border-box; 
     -webkit-box-sizing: border-box; 
      box-sizing: border-box; 
     /* opacity: 0.7; */
     /* border-radius: 10px 10px 0px 0px; */
-    padding: 20px 40px 20px 40px;
+    /* padding: 20px 40px 20px 40px; */
     width:100%;
-    color: white;
-    font-family: Gotham Bold;
-    font-size: 20px;
+    font-family: Gotham Thin;
+    font-weight: Bold;
+    font-size: 30px;
+    text-align: left;
 }
 
 .flex {
@@ -858,6 +866,10 @@ a.btn {
     line-height: 1.5em;
 }
 
+.bg-green {
+    background-color: #42ba96;
+}
+
 .green {
     color: #42ba96
 }
@@ -873,4 +885,8 @@ a.btn {
 
 .accordion {
     color: var(--dark-gray)
+}
+
+.accordion-body {
+    line-height: 2em;
 }
